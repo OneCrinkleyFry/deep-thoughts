@@ -23,7 +23,7 @@ const Profile = props => {
     try {
       await addFriend({ variables: { id: user._id } });
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   }
 
